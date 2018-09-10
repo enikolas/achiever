@@ -1,5 +1,5 @@
 require('dotenv').config();
-const rp = require('request-promise');
+const rp = require('request-promise').defaults({ simple: false });
 const cheerio = require('cheerio');
 const moment = require('moment');
 const jwt = require('jwt-simple');
